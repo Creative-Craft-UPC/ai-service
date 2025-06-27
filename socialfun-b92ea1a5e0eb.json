@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "socialfun",
+  "private_key_id": "b92ea1a5e0eb44d3271ca58a7855dc9b6da5b5e4",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC9XFbNxivAdStL\n3xSyv0F45V11sjm+uYem4Cy9VIDK66yJq0RNW06BqkVRFydXl4Wse3UbBS5pmAB0\nIB24j4tMKU7lbjg6Go6j1/yeVi+8I7o0YmfJ6x8feoKSZb9IL/ei2bX00CBnJAPR\nICJwlVM1zvR82PVrTf2tCz5HP2PRKp2YlMbdPG9c8kMzT2S0bld+nigS+pTzWqW9\nl6wDoyc/rhUj2Pjs/TiKLSca5JP8Ngoc4vg7izXfn0HNXnHhw5Rfq3UFYNi5cHo9\njB1ranTW5XLVFXYJ2Q91x7nZ+ORXcXpVOpQiikhycNbRqruiqIeK6Mpgm56Grsnt\nWKfQc1//AgMBAAECggEAEcUGiEzecjMMmxQWFygHdtbfTForPRCgADLtP98cLu6q\nxEiEIlY9KcHWu2NW18tqSeNT+/MihdozwLH62ATwZ3dA5hrPv/QaCpoMJLelxxv7\nL0tEvhgIVaXjduWBa77EmE2h25VkVQl2Kju/v5zjsBr5qnWZojYxZfm2IG18anZR\nlvCCX9gK1i7jagG1DHYOktmCQUv2iVR4L2P4HbfEwItHaizf41JUom227fnNQtPx\n1OEZgVWGaVGy1GxIrq9cNuiwMVGJ0C6HC95JDohxm8RV8sUhQDPUYyoilFRCgl1f\nTFbTlrsADM61Sy82ChVnSLV4rjm+jqeHMFC8gFtGgQKBgQD89gxXg9Y40CK6Mo4l\nssWLFL0ibYrF1kxTwlzAXdtz+dy66dqjEdtOpqjDq8J5WpjraT+wMX8+CanVEr+q\n9il+5014TXhSrssY0MRfdoqkqBk4htWCwXxQG6hIf7xWDouXW7GVwRa1GTlssFik\nmMLEcSFtkC34NuZU5xmozPiYHwKBgQC/orIBm7vZ4ZKch6jkgSfMSufi0Dge0KwF\nD/QX82AyzUR94ZFbF7sZZOBTS83NLkJuVvCF9fCsCpHEDiit/NVSZkOM6R8W/roP\nJ8rIqXf99nA/AUexIAX5a6rRPVArGwfzYy1AwEBChM8YduH7WFgX7go9RjZWdNOe\nktykOS+8IQKBgAMYd7oycNKtKV+h8r9fWq+DB3V+Za5aGwEDZeMswty+eAcJiZVp\nSIfD3ljWp0CY7TokRZVAZdA6iguDeTj8XjGhXv9T418PqIibNWv9pWCydeyNKdu5\nxm2siPiqJ4HeF7M4egndHQwGTP+ZgNwyyl9hCwmuNAHPmi37zgKUz439AoGAbtlY\naC/CMJ0Xpm2eV1cSQ0zM51kULVb9OgxpYHVKHvi3dq1E3FFUy7KbQ/NkPxxUFuk5\nRfPmXE3c1XBvPX0zk+9NgbPTZQTBcUTOOtY0b3XepcNCygVBD26lJ1V1Cwoexj2H\nDp5mTVPvSzJxM2d9xZHO4HS9t7LqOh6vfFsL7qECgYBoA6htSNoQCUrPWltyDeqv\ne4GFcs8UNZ69utnhfM6PL2+G6c6iQPZtKZc6tEQQB+oQUksER82sLOzQcSh5rvsf\n1A+gkN2RPwsBCp0d60cON6lOf8pSZGwpfmBuwkDj9xR5IAlfHNKFQL6Pe+VPoVgw\nt/d1dp4C/kRxQTT2p5st0A==\n-----END PRIVATE KEY-----\n",
+  "client_email": "socialfun-media-access@socialfun.iam.gserviceaccount.com",
+  "client_id": "103658650386691206697",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/socialfun-media-access%40socialfun.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
