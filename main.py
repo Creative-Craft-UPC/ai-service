@@ -5,7 +5,7 @@ from routes import prompt_routes
 from fastapi.middleware.cors import CORSMiddleware
 import os
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "secrets/socialfun-b92ea1a5e0eb.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "socialfun-b92ea1a5e0eb.json"
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
