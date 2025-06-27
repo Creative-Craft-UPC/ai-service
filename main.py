@@ -5,8 +5,9 @@ from routes import prompt_routes
 from fastapi.middleware.cors import CORSMiddleware
 import os
 
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/secrets/GOOGLE_APPLICATION_CREDENTIALS"
+from google.cloud import storage
 
+storage_client = storage.Client()
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
