@@ -1,0 +1,29 @@
+from contextlib import asynccontextmanager
+from fastapi import FastAPI
+from database.database import test_connection
+from routes import prompt_routes
+from fastapi.middleware.cors import CORSMiddleware
+import os
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "../socialfun-b92ea1a5e0eb.json"
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Evento de inicio (startup)
+    await test_connection()
+    yield
+    # Evento de cierre (shutdown)
+    print("Cerrando la aplicación...")
+
+
+app = FastAPI(title="AI Service")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # O especifica ["http://IP-DE-FLUTTER:PUERTO"]
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+app.include_router(prompt_routes.router, prefix="/api/model", tags=["llm-model"])
