@@ -1,7 +1,7 @@
 from typing import List, Optional
 from pydantic import BaseModel, Field
 
-class GPTExerciceRequest(BaseModel):
+class GPTExerciseRequest(BaseModel):
     prompt: str = Field(..., example="Genera una actividad de reconocimiento de emociones/actividad social.")
 
 class GPTVoiceRequest(BaseModel):

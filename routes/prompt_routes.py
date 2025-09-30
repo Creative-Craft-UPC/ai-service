@@ -4,7 +4,7 @@ from pathlib import Path
 from fastapi import APIRouter, HTTPException
 from fastapi.responses import JSONResponse, StreamingResponse
 import requests
-from models.schemas import GPTExerciceRequest, GPTVoiceRequest
+from models.schemas import GPTExerciseRequest, GPTVoiceRequest
 from config.openai_config import text_client, speech_client
 import io
 from openai.helpers import LocalAudioPlayer
@@ -15,15 +15,15 @@ from services.storage_service import upload_audio_to_gcs
 router = APIRouter()
 
 
-@router.post("/exercice/")
-async def gpt_generate_exercice(exercice_prompt: GPTExerciceRequest):
+@router.post("/exercise/")
+async def gpt_generate_exercise(exercise_prompt: GPTExerciseRequest):
     try:
         response = text_client.chat.completions.create(
             model="ft:gpt-4o-mini-2024-07-18:creativecraft:asd-activities-v5:Bmov5us8",
             messages=[{"role": "user", "content": [
                 {
                     "type": "text",
-                    "text": exercice_prompt.prompt
+                    "text": exercise_prompt.prompt
                 }
                 ]}],
             temperature=1.0,
