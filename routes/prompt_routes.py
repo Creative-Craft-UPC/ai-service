@@ -19,7 +19,7 @@ router = APIRouter()
 async def gpt_generate_exercise(exercise_prompt: GPTExerciseRequest):
     try:
         response = text_client.chat.completions.create(
-            model="ft:gpt-4o-mini-2024-07-18:creativecraft:asd-activities-v5:Bmov5us8",
+            model="ft:gpt-4o-mini-2024-07-18:creativecraft:creativecraft-modelo3:CaJouyK4",
             messages=[{"role": "user", "content": [
                 {
                     "type": "text",
