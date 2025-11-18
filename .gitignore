@@ -3,3 +3,5 @@ audios*
 __pycache__*
 
 iaContext
+
+secrets/

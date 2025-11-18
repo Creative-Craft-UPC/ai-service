@@ -1,9 +1,10 @@
 import base64
 import json
 from pathlib import Path
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import JSONResponse, StreamingResponse
 import requests
+from auth.internal_dep import get_internal_principal
 from models.schemas import GPTExerciseRequest, GPTVoiceRequest
 from config.openai_config import text_client, speech_client
 import io
@@ -16,7 +17,7 @@ router = APIRouter()
 
 
 @router.post("/exercise/")
-async def gpt_generate_exercise(exercise_prompt: GPTExerciseRequest):
+async def gpt_generate_exercise(exercise_prompt: GPTExerciseRequest, principal=Depends(get_internal_principal)):
     try:
         response = text_client.chat.completions.create(
             model="ft:gpt-4o-mini-2024-07-18:creativecraft:creativecraft-modelo3:CaJouyK4",
@@ -35,7 +36,7 @@ async def gpt_generate_exercise(exercise_prompt: GPTExerciseRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.post("/audio/download")
-async def gpt_generate_audio(audio_prompt: GPTVoiceRequest):
+async def gpt_generate_audio(audio_prompt: GPTVoiceRequest, principal=Depends(get_internal_principal)):
     audio_filename = f"{audio_prompt.audio_name}.mp3"
     custom_directory = Path(__file__).parent/ "audios"
     custom_directory.mkdir(parents=True, exist_ok=True)
@@ -63,7 +64,7 @@ async def gpt_generate_audio(audio_prompt: GPTVoiceRequest):
     #)
 
 @router.post("/audio/real-time")
-async def gpt_generate_audio(audio_prompt: GPTVoiceRequest):
+async def gpt_generate_audio(audio_prompt: GPTVoiceRequest, principal=Depends(get_internal_principal)):
     async with speech_client.audio.speech.with_streaming_response.create(
         model="gpt-4o-mini-tts",
         voice="nova",
