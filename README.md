@@ -5,7 +5,16 @@ Servicio de IA encargado de:
 - Generar historias, ejercicios u otros recursos usando modelos de IA.
 - Exponer endpoints consumidos por el API Gateway.
 
+Link del repositorio en GitHub: https://github.com/Creative-Craft-UPC/ai-service 
+
 ---
+
+## Clonar el Repositorio
+
+```bash
+git clone https://github.com/Creative-Craft-UPC/ai-service.git
+cd social_fun
+```
 
 ## 🧱 Stack tecnológico
 
@@ -15,6 +24,7 @@ Servicio de IA encargado de:
 - Google Cloud Storage (GCS)
 - PyJWT (token interno desde el Gateway)
 - Docker + Cloud Run
+- python-dotenv
 
 ---
 
